@@ -1,5 +1,8 @@
 package edu.pe.cibertec.Evaluacion_final_Pregunta2_resilencia.model;
 
+import lombok.Data;
+
+@Data
 public class Pedido {
     private Long id;
     private String codigo;
@@ -11,7 +14,6 @@ public class Pedido {
     private String observaciones;
     private int idRestaurante;
 
-    // Constructor, getters, and setters
 
     public Pedido(Long id, String codigo, String fecha, String direccion, String telefono, String email, String estado, String observaciones, int idRestaurante) {
         this.id = id;
